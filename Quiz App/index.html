@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        .answers button {
+            margin: 5px 0;
+            display: block;
+            width: 30%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: rgb(12, 161, 129);
+            color: white;
+            text-align: left;
+        }
+
+        .answers button:hover{
+            background-color: rgb(12, 247, 168);
+            color: black;
+        }
+        .result {
+            font-size: 1.4rem;
+            color: green;
+        }
+        #next-button, #again{
+            padding: 8px;
+            background-color: blue;
+            font-size: 16px;
+            color: white;
+            border: none;
+        }
+
+        #next-button:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <div id="quiz">
+        <div id="question-container">
+            <p id="question" class="question"></p>
+            <div id="answers" class="answers"></div>
+        </div>
+        <button id="next-button" style="display: none;">Next</button>
+    </div>
+    <p id="result" class="result"></p>
+    <button id="again" style="display: none;">Attemp Again</button>
+    <script src="./script.js"></script>
+</body>
+</html>
